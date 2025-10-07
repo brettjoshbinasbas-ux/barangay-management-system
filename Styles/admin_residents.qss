@@ -1,0 +1,234 @@
+/* ========================================
+   Admin Residents Stylesheet
+   ======================================== */
+
+/* Main Container */
+QScrollArea#residentsScroll {
+    border: none;
+    background-color: #F9FAFB;
+}
+
+QWidget#residentsContent {
+    background-color: #F9FAFB;
+}
+
+/* ========================================
+   HEADER SECTION
+   ======================================== */
+QFrame#headerSection {
+    background-color: transparent;
+}
+
+QLabel#pageTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: #111827;
+}
+
+QLabel#mainSubtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8B5CF6;
+}
+
+QLabel#description {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+/* Export Buttons */
+QPushButton#exportButton {
+    background-color: transparent;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+QPushButton#exportButton:hover {
+    background-color: #F3F4F6;
+    border-color: #8B5CF6;
+}
+
+/* ========================================
+   TABLE CARD
+   ======================================== */
+QFrame#tableCard {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+}
+
+QLabel#listTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111827;
+}
+
+QLabel#listSubtitle {
+    font-size: 13px;
+    color: #6B7280;
+}
+
+/* ========================================
+   FILTERS
+   ======================================== */
+QLineEdit#searchBar {
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #374151;
+}
+
+QLineEdit#searchBar:focus {
+    border: 2px solid #8B5CF6;
+    background-color: #FFFFFF;
+    padding: 9px 14px;
+}
+
+QLineEdit#searchBar::placeholder {
+    color: #9CA3AF;
+}
+
+QComboBox#staffFilter {
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #374151;
+}
+
+QComboBox#staffFilter:focus {
+    border: 2px solid #8B5CF6;
+}
+
+QComboBox#staffFilter::drop-down {
+    border: none;
+    padding-right: 10px;
+}
+
+QComboBox#staffFilter::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #6B7280;
+    margin-right: 8px;
+}
+
+QComboBox#staffFilter QAbstractItemView {
+    background-color: white;
+    border: 1px solid #E5E7EB;
+    selection-background-color: #F3E8FF;
+    selection-color: #6B21A8;
+    padding: 5px;
+    outline: none;
+}
+
+/* ========================================
+   TABLE STYLING
+   ======================================== */
+QTableWidget#residentsTable {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    gridline-color: #F3F4F6;
+    selection-background-color: #EFF6FF;
+    selection-color: #111827;
+}
+
+/* Table Header */
+QTableWidget#residentsTable QHeaderView::section {
+    background-color: #F9FAFB;
+    color: #6B7280;
+    padding: 12px 15px;
+    border: none;
+    border-bottom: 2px solid #E5E7EB;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Table Cells */
+QTableWidget#residentsTable::item {
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #F3F4F6;
+    color: #374151;
+    font-size: 14px;
+}
+
+QTableWidget#residentsTable::item:selected {
+    background-color: #EFF6FF;
+    color: #111827;
+}
+
+QTableWidget#residentsTable::item:alternate {
+    background-color: #FAFAFA;
+}
+
+QTableWidget#residentsTable:focus {
+    outline: none;
+}
+
+/* ========================================
+   ACTION BUTTONS
+   ======================================== */
+QPushButton#editButton {
+    background-color: transparent;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #374151;
+}
+
+QPushButton#editButton:hover {
+    background-color: #F3F4F6;
+    border-color: #8B5CF6;
+}
+
+QPushButton#deleteButton {
+    background-color: transparent;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #EF4444;
+}
+
+QPushButton#deleteButton:hover {
+    background-color: #FEE2E2;
+    border-color: #EF4444;
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+QScrollBar:vertical {
+    background: #F9FAFB;
+    width: 10px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: #D1D5DB;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #9CA3AF;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}

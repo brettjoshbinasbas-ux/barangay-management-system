@@ -1,0 +1,502 @@
+/* ========================================
+   Activity History Stylesheet
+   For StaffActivityHistory and AdminActivityHistory
+   ======================================== */
+
+/* Main Container */
+QScrollArea#activityScroll {
+    border: none;
+    background-color: #F9FAFB;
+}
+
+QWidget#activityContent {
+    background-color: #F9FAFB;
+}
+
+/* ========================================
+   HEADER SECTION
+   ======================================== */
+QFrame#headerSection {
+    background-color: transparent;
+}
+
+QLabel#pageTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: #111827;
+}
+
+QLabel#mainSubtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8B5CF6;
+}
+
+QLabel#description {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+/* ========================================
+   EXPORT BUTTONS
+   ======================================== */
+QPushButton#exportCsvButton,
+QPushButton#exportPdfButton {
+    background-color: transparent;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+QPushButton#exportCsvButton:hover,
+QPushButton#exportPdfButton:hover {
+    background-color: #F3F4F6;
+    border-color: #8B5CF6;
+}
+
+QPushButton#exportCsvButton:pressed,
+QPushButton#exportPdfButton:pressed {
+    background-color: #E5E7EB;
+}
+
+/* ========================================
+   TABLE CARD
+   ======================================== */
+QFrame#tableCard {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+}
+
+QLabel#listTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111827;
+}
+
+QLabel#listSubtitle {
+    font-size: 13px;
+    color: #6B7280;
+}
+
+/* ========================================
+   FILTER CONTROLS
+   ======================================== */
+QLabel#filterLabel {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6B7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+QDateEdit {
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #374151;
+    min-height: 40px;
+}
+
+QDateEdit:focus {
+    border: 2px solid #8B5CF6;
+    background-color: #FFFFFF;
+}
+
+QDateEdit::drop-down {
+    border: none;
+    padding-right: 10px;
+}
+
+QDateEdit::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #6B7280;
+}
+
+QComboBox {
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #374151;
+    min-height: 40px;
+}
+
+QComboBox:focus {
+    border: 2px solid #8B5CF6;
+    background-color: #FFFFFF;
+}
+
+QComboBox::drop-down {
+    border: none;
+    padding-right: 10px;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #6B7280;
+}
+
+QComboBox QAbstractItemView {
+    background-color: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    selection-background-color: #F3E8FF;
+    selection-color: #6B21A8;
+    padding: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+QLineEdit {
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #374151;
+    min-height: 40px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #8B5CF6;
+    background-color: #FFFFFF;
+}
+
+QLineEdit::placeholder {
+    color: #9CA3AF;
+    font-size: 14px;
+}
+
+/* ========================================
+   TABLE STYLING
+   ======================================== */
+QTableWidget#activityTable {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    gridline-color: #F3F4F6;
+    selection-background-color: #EFF6FF;
+    selection-color: #111827;
+    outline: none;
+}
+
+/* ========================================
+   TABLE HEADER ALIGNMENT FIX
+   ======================================== */
+QTableWidget#activityTable QHeaderView::section {
+    background-color: #F9FAFB;
+    color: #6B7280;
+    padding: 12px 15px;
+    border: none;
+    border-bottom: 2px solid #E5E7EB;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+/* Force specific column alignments */
+QTableWidget#activityTable::item {
+    padding: 12px 15px;
+    border: none;
+    border-bottom: 1px solid #F3F4F6;
+    color: #374151;
+    font-size: 14px;
+    text-align: left; /* Ensure content alignment matches header */
+}
+
+/* Specific column text alignment */
+QTableWidget#activityTable::item:column-0 { /* Timestamp */
+    text-align: left;
+}
+
+QTableWidget#activityTable::item:column-1 { /* User */
+    text-align: left;
+}
+
+QTableWidget#activityTable::item:column-2 { /* Activity Type */
+    text-align: left;
+}
+
+QTableWidget#activityTable::item:column-3 { /* Description */
+    text-align: left;
+}
+
+QTableWidget#activityTable::item:column-4 { /* Role */
+    text-align: center;
+}
+
+QTableWidget#activityTable::item:column-5 { /* IP Address */
+    text-align: left;
+}
+
+/* Table Cells */
+QTableWidget#activityTable::item {
+    padding: 12px 15px;
+    border: none;
+    border-bottom: 1px solid #F3F4F6;
+    color: #374151;
+    font-size: 14px;
+}
+
+QTableWidget#activityTable::item:selected {
+    background-color: #EFF6FF;
+    color: #111827;
+}
+
+QTableWidget#activityTable::item:alternate {
+    background-color: #FAFAFA;
+}
+
+/* ========================================
+   ACTIVITY TYPE BADGES
+   ======================================== */
+QLabel#activityBadge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+/* Activity Type Colors */
+QLabel#activityBadge[activityType="add_resident"],
+QLabel#activityBadge[activityType="add_staff"],
+QLabel#activityBadge[activityType="add_admin"] {
+    background-color: #D1FAE5;
+    color: #065F46;
+}
+
+QLabel#activityBadge[activityType="edit_resident"],
+QLabel#activityBadge[activityType="edit_staff"],
+QLabel#activityBadge[activityType="edit_admin"],
+QLabel#activityBadge[activityType="edit_request"] {
+    background-color: #FEF3C7;
+    color: #92400E;
+}
+
+QLabel#activityBadge[activityType="delete_resident"],
+QLabel#activityBadge[activityType="delete_staff"],
+QLabel#activityBadge[activityType="delete_admin"],
+QLabel#activityBadge[activityType="delete_request"] {
+    background-color: #FEE2E2;
+    color: #991B1B;
+}
+
+QLabel#activityBadge[activityType="add_request"],
+QLabel#activityBadge[activityType="complete_request"],
+QLabel#activityBadge[activityType="approve_request"] {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+}
+
+QLabel#activityBadge[activityType="reject_request"],
+QLabel#activityBadge[activityType="reopen_request"] {
+    background-color: #FCE7F3;
+    color: #BE185D;
+}
+
+QLabel#activityBadge[activityType="export_csv"],
+QLabel#activityBadge[activityType="export_pdf"] {
+    background-color: #E0E7FF;
+    color: #3730A3;
+}
+
+QLabel#activityBadge[activityType="login"],
+QLabel#activityBadge[activityType="logout"] {
+    background-color: #F3F4F6;
+    color: #374151;
+}
+
+/* Default badge style */
+QLabel[objectName^="activityBadge_"] {
+    background-color: #F3F4F6;
+    color: #6B7280;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* ========================================
+   ROLE BADGES
+   ======================================== */
+QLabel#roleBadge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+QLabel#roleBadge[roleType="staff"] {
+    background-color: #E0E7FF;
+    color: #3730A3;
+}
+
+QLabel#roleBadge[roleType="admin"] {
+    background-color: #FCE7F3;
+    color: #BE185D;
+}
+
+/* ========================================
+   IP ADDRESS STYLING
+   ======================================== */
+QLabel#ipAddress {
+    font-size: 12px;
+    color: #6B7280;
+    font-family: "Monaco", "Consolas", monospace;
+    background-color: #F9FAFB;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid #F3F4F6;
+}
+
+/* ========================================
+   TIMESTAMP STYLING
+   ======================================== */
+QLabel#timestamp {
+    font-size: 13px;
+    color: #6B7280;
+    font-family: "Monaco", "Consolas", monospace;
+}
+
+/* ========================================
+   USERNAME STYLING
+   ======================================== */
+QLabel#username {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* ========================================
+   DESCRIPTION STYLING
+   ======================================== */
+QLabel#descriptionText {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+/* ========================================
+   SCROLLBAR STYLING
+   ======================================== */
+QScrollBar:vertical {
+    background: #F9FAFB;
+    width: 10px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: #D1D5DB;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #9CA3AF;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QScrollBar:horizontal {
+    background: #F9FAFB;
+    height: 10px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #D1D5DB;
+    border-radius: 5px;
+    min-width: 20px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #9CA3AF;
+}
+
+/* ========================================
+   EMPTY STATE STYLING
+   ======================================== */
+QLabel#emptyState {
+    font-size: 16px;
+    color: #9CA3AF;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #FFFFFF;
+    border: 2px dashed #E5E7EB;
+    border-radius: 12px;
+}
+
+QLabel#emptyStateIcon {
+    font-size: 48px;
+    color: #D1D5DB;
+    margin-bottom: 16px;
+}
+
+/* ========================================
+   LOADING STATE STYLING
+   ======================================== */
+QLabel#loadingState {
+    font-size: 14px;
+    color: #6B7280;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+@media (max-width: 1200px) {
+    QFrame#metricCard {
+        min-width: 200px;
+    }
+
+    QLabel#metricValue {
+        font-size: 24px;
+    }
+}
+
+/* ========================================
+   DARK MODE SUPPORT (Optional)
+   ======================================== */
+/*
+QWidget[darkMode="true"] #activityContent {
+    background-color: #111827;
+}
+
+QWidget[darkMode="true"] #tableCard {
+    background-color: #1F2937;
+    border-color: #374151;
+}
+
+QWidget[darkMode="true"] QTableWidget#activityTable {
+    background-color: #1F2937;
+    color: #F9FAFB;
+}
+*/

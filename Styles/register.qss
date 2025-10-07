@@ -1,0 +1,100 @@
+/* === Window Background === */
+QWidget {
+    background-color: #f3f4f6;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* === Title Label === */
+QLabel {
+    color: #312f4d;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* === Input Fields === */
+QLineEdit {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+QLineEdit::placeholder {
+    color: #a9a9a9;
+}
+
+/* === ComboBox === */
+QComboBox {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+/* === ComboBox Dropdown === */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #cccccc;
+    background-color: #e0e0e0;
+}
+
+/* === ComboBox Popup === */
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    selection-background-color: #4caf50;
+    selection-color: white;
+    font-size: 14px;
+}
+
+/* === Register Button === */
+QPushButton {
+    background-color: #9f38ff;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+QPushButton:hover {
+    background-color: #651aab;
+}
+
+QPushButton:pressed {
+    background-color: #388e3c;
+}
+
+/* === QMessageBox Styling === */
+QMessageBox QLabel {
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+QMessageBox QPushButton {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #388e3c;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid gray;
+    selection-background-color: black;
+    selection-color: white; /* 👈 so text is visible when highlighted */
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}

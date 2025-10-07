@@ -1,0 +1,140 @@
+/* ========================================
+   Staff Resident Demographics Stylesheet
+   ======================================== */
+
+/* Main Widget */
+StaffResidentDemographics {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Scroll Area */
+QScrollArea#demographicsScroll {
+    border: none;
+    background-color: #f8f9fa;
+}
+
+QWidget#demographicsContent {
+    background-color: #f8f9fa;
+}
+
+/* === Header Section === */
+#headerTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+/* === Subtitle === */
+#subtitle {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    padding: 5px 0px;
+}
+
+/* === Refresh Button === */
+QPushButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px 20px;
+    min-height: 35px;
+}
+
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton:pressed {
+    background-color: #21618c;
+}
+
+/* === Statistics Cards === */
+#statsCard {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#statsTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#statsValue {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+#statsSubtitle {
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+/* === Section Headers === */
+#sectionHeader {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin: 15px 0px 10px 0px;
+}
+
+/* === Chart Canvas Styling === */
+FigureCanvas {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+/* === Centered Warning Message === */
+QLabel {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    color: #7f8c8d;
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+}
+
+/* === Scrollbar Styling === */
+QScrollBar:vertical {
+    background: #f8f9fa;
+    width: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background: #bdc3c7;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #95a5a6;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}

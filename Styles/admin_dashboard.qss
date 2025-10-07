@@ -1,0 +1,280 @@
+/* ===== MAIN WIDGET ===== */
+AdminDashboard {
+    background-color: #f8fafc;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== SIDEBAR ===== */
+#sidebar {
+    background-color: #ffffff;
+    border-right: 1px solid #e2e8f0;
+}
+
+/* Logo Section */
+#logoLabel {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+#subtitleLabel {
+    font-size: 11px;
+    color: #94A3B8;
+}
+
+/* Navigation Buttons */
+#navButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #64748b;
+    text-align: left;
+    padding: 14px 18px;
+}
+
+#navButton:hover {
+    background-color: #f1f5f9;
+    color: #334155;
+}
+
+#navButton[active="true"] {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+/* Logout Button */
+#logoutButton {
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #dc2626;
+    padding: 14px 18px;
+}
+
+#logoutButton:hover {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+/* ===== DASHBOARD CONTENT ===== */
+#dashboardContent {
+    background-color: #f8fafc;
+}
+
+/* Header */
+#headerFrame {
+    background-color: transparent;
+}
+
+#pageTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+/* User Badge */
+#userBadge {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+#userIcon {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #DBEAFE;
+    color: #1E40AF;
+    border-radius: 20px;
+}
+
+#userName {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1E293B;
+}
+
+#userRole {
+    font-size: 12px;
+    color: #64748B;
+}
+
+/* ===== METRIC CARDS ===== */
+#metricCard {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid;
+    min-width: 220px;
+}
+
+#metricCard[borderColor="#3B82F6"] {
+    border-left-color: #3B82F6;
+}
+
+#metricCard[borderColor="#10B981"] {
+    border-left-color: #10B981;
+}
+
+#metricCard[borderColor="#8B5CF6"] {
+    border-left-color: #8B5CF6;
+}
+
+#metricTitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: #475569;
+}
+
+#metricValue {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1E293B;
+}
+
+#metricIcon {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ===== SECTION CARDS ===== */
+#sectionCard {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cardTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1E293B;
+}
+
+#cardSubtitle {
+    font-size: 13px;
+    color: #94A3B8;
+}
+
+/* Activity Items */
+#activityItem {
+    background-color: #ffffff;
+    border: 1px solid #f1f5f9;
+    border-radius: 8px;
+    padding: 8px 0px;
+}
+
+#activityItem:hover {
+    background-color: #f8fafc;
+    border-color: #e2e8f0;
+}
+
+#activityBullet {
+    font-size: 14px;
+    color: #7C3AED;
+    font-weight: bold;
+}
+
+#activityTitle {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1E293B;
+}
+
+#activityName {
+    font-size: 12px;
+    color: #64748B;
+}
+
+/* Activity Tags */
+#activityTag_registration, #activityTag_add_resident {
+    background-color: #D1FAE5;
+    color: #059669;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+#activityTag_document, #activityTag_request, #activityTag_add_request, #activityTag_edit_request {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+#activityTag_update, #activityTag_edit, #activityTag_edit_resident {
+    background-color: #FEF3C7;
+    color: #D97706;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+#activityTag_delete, #activityTag_delete_resident, #activityTag_delete_request {
+    background-color: #FEE2E2;
+    color: #DC2626;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+/* Default tag style */
+QLabel[objectName^="activityTag_"] {
+    background-color: #F1F5F9;
+    color: #64748B;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+/* Status Items */
+#statusItem {
+    background-color: #ffffff;
+    border: 1px solid #f1f5f9;
+    border-radius: 8px;
+    padding: 10px 0px;
+}
+
+#statusItem:hover {
+    background-color: #f8fafc;
+    border-color: #e2e8f0;
+}
+
+#statusLabel {
+    font-size: 13px;
+    font-weight: 500;
+    color: #64748B;
+}
+
+#statusValue {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1E293B;
+}
+
+/* Scroll Area */
+#dashboardScroll {
+    background-color: transparent;
+    border: none;
+}
+
+/* Central Widget */
+#centralWidget {
+    background-color: #f8fafc;
+}
+
+/* Content Area */
+#contentArea {
+    background-color: #f8fafc;
+}

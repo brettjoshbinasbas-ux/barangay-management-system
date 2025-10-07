@@ -1,0 +1,79 @@
+/* admin_reports.qss */
+
+#infographicsPanel {
+    background-color: #f9fafc;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Header Labels */
+#titleLabel {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4A148C;  /* Dark violet for Admin */
+}
+
+#subtitleLabel {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* KPI Boxes */
+#kpiBox {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    min-width: 200px;
+}
+
+#kpiTitle {
+    font-size: 14px;
+    color: #555;
+}
+
+#kpiValue {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6A1B9A;  /* Purple for admin theme */
+}
+
+/* Chart Boxes */
+#chartBox {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+#chartTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#chartSubtitle {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Summary Box */
+#summaryBox {
+    background-color: #fafafa;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+#summaryLabel {
+    font-size: 13px;
+    color: #555;
+}
+
+#summaryValue {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4A148C;
+}

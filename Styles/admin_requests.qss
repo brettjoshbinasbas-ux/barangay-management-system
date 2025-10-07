@@ -1,0 +1,325 @@
+/* ========================================
+   Admin Requests Stylesheet
+   ======================================== */
+
+/* Main Container */
+QScrollArea#requestsScroll {
+    border: none;
+    background-color: #F9FAFB;
+}
+
+QWidget#requestsContent {
+    background-color: #F9FAFB;
+}
+
+/* ========================================
+   HEADER SECTION
+   ======================================== */
+QFrame#headerSection {
+    background-color: transparent;
+}
+
+QLabel#pageTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: #111827;
+}
+
+QLabel#mainSubtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8B5CF6;
+}
+
+QLabel#description {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+/* New Request Button */
+QPushButton#newRequestButton {
+    background-color: #8B5CF6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+QPushButton#newRequestButton:hover {
+    background-color: #7C3AED;
+}
+
+QPushButton#newRequestButton:pressed {
+    background-color: #6D28D9;
+}
+
+/* ========================================
+   METRIC CARDS
+   ======================================== */
+QFrame#metricCard {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-left: 4px solid #10B981;
+    border-radius: 8px;
+    min-width: 280px;
+    max-width: 350px;
+}
+
+QLabel#metricTitle {
+    font-size: 14px;
+    color: #6B7280;
+    font-weight: 500;
+}
+
+QLabel#metricValue {
+    font-size: 36px;
+    font-weight: bold;
+    color: #111827;
+}
+
+QLabel#metricIcon {
+    font-size: 20px;
+}
+
+/* ========================================
+   TABLE CARD
+   ======================================== */
+QFrame#tableCard {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+}
+
+QLabel#listTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111827;
+}
+
+QLabel#listSubtitle {
+    font-size: 13px;
+    color: #6B7280;
+}
+
+/* ========================================
+   FILTER & EXPORT BUTTONS
+   ======================================== */
+QComboBox#filterDropdown {
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #374151;
+}
+
+QComboBox#filterDropdown:focus {
+    border: 2px solid #8B5CF6;
+}
+
+QComboBox#filterDropdown::drop-down {
+    border: none;
+    padding-right: 10px;
+}
+
+QComboBox#filterDropdown::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #6B7280;
+    margin-right: 8px;
+}
+
+QComboBox#filterDropdown QAbstractItemView {
+    background-color: white;
+    border: 1px solid #E5E7EB;
+    selection-background-color: #F3E8FF;
+    selection-color: #6B21A8;
+    padding: 5px;
+    outline: none;
+}
+
+QPushButton#exportButton {
+    background-color: transparent;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+QPushButton#exportButton:hover {
+    background-color: #F3F4F6;
+    border-color: #8B5CF6;
+}
+
+/* ========================================
+   TABLE STYLING
+   ======================================== */
+QTableWidget#requestsTable {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    gridline-color: #F3F4F6;
+    selection-background-color: #EFF6FF;
+    selection-color: #111827;
+}
+
+/* Table Header */
+QTableWidget#requestsTable QHeaderView::section {
+    background-color: #F9FAFB;
+    color: #6B7280;
+    padding: 12px 15px;
+    border: none;
+    border-bottom: 2px solid #E5E7EB;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Table Cells */
+QTableWidget#requestsTable::item {
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #F3F4F6;
+    color: #374151;
+    font-size: 14px;
+}
+
+QTableWidget#requestsTable::item:selected {
+    background-color: #EFF6FF;
+    color: #111827;
+}
+
+QTableWidget#requestsTable::item:alternate {
+    background-color: #FAFAFA;
+}
+
+QTableWidget#requestsTable:focus {
+    outline: none;
+}
+
+/* ========================================
+   TABLE CELL CONTENT
+   ======================================== */
+QLabel#residentName {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111827;
+}
+
+QLabel#docType {
+    font-size: 14px;
+    color: #374151;
+}
+
+QLabel#dateLabel {
+    font-size: 13px;
+    color: #6B7280;
+}
+
+/* ========================================
+   STATUS BADGES
+   ======================================== */
+QLabel#statusBadge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+QLabel#statusBadge[statusType="pending"] {
+    background-color: #FEF3C7;
+    color: #92400E;
+}
+
+QLabel#statusBadge[statusType="in_progress"] {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+}
+
+QLabel#statusBadge[statusType="completed"] {
+    background-color: #D1FAE5;
+    color: #065F46;
+}
+
+QLabel#statusBadge[statusType="rejected"] {
+    background-color: #FEE2E2;
+    color: #991B1B;
+}
+
+/* ========================================
+   ACTION BUTTONS
+   ======================================== */
+QPushButton#approveButton {
+    background-color: transparent;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #10B981;
+    font-weight: bold;
+}
+
+QPushButton#approveButton:hover {
+    background-color: #D1FAE5;
+    border-color: #10B981;
+}
+
+QPushButton#rejectButton {
+    background-color: transparent;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #EF4444;
+    font-weight: bold;
+}
+
+QPushButton#rejectButton:hover {
+    background-color: #FEE2E2;
+    border-color: #EF4444;
+}
+
+QPushButton#reopenButton {
+    background-color: transparent;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #3B82F6;
+}
+
+QPushButton#reopenButton:hover {
+    background-color: #EFF6FF;
+    border-color: #3B82F6;
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+QScrollBar:vertical {
+    background: #F9FAFB;
+    width: 10px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: #D1D5DB;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #9CA3AF;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}

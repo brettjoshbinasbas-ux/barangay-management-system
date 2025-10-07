@@ -1,0 +1,120 @@
+/* ========================================
+   BRIMS Login Page Stylesheet
+   ======================================== */
+
+/* Main Window Background */
+QMainWindow {
+    background-color: #E8EEF2;
+}
+
+/* Central Widget */
+QWidget#centralWidget {
+    background-color: #E8EEF2;
+}
+
+/* Login Card Container */
+QFrame#loginCard {
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #E0E0E0;
+}
+
+/* Title - BRIMS Login */
+QLabel#titleLabel {
+    font-size: 28px;
+    font-weight: bold;
+    color: #8F56C4;
+    margin-bottom: 5px;
+}
+
+/* Subtitle */
+QLabel#subtitleLabel {
+    font-size: 13px;
+    color: #718096;
+    margin-bottom: 10px;
+}
+
+/* Field Labels (Username, Password, Role) */
+QLabel#fieldLabel {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2D3748;
+    margin-bottom: 3px;
+}
+
+/* Input Fields (Username, Password) */
+QLineEdit#inputField {
+    padding: 10px 15px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: white;
+    color: #2D3748;
+    line-height: normal;
+}
+
+QLineEdit#inputField:focus {
+    border: 2px solid #8456C4;
+    outline: none;
+    padding: 9px 14px;
+}
+
+QLineEdit#inputField::placeholder {
+    color: #9CA3AF;
+}
+
+/* ComboBox (Role Dropdown) */
+QComboBox#comboBox {
+    padding: 3px 8px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: white;
+    color: #2D3748;
+    min-height: 45px;
+}
+
+QComboBox#comboBox:focus {
+    border: 2px solid #8456C4;
+}
+
+QComboBox#comboBox::drop-down {
+    border: none;
+    padding-right: 10px;
+}
+
+QComboBox#comboBox::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #6B7280;
+    margin-right: 8px;
+}
+
+QComboBox#comboBox QAbstractItemView {
+    background-color: white;
+    border: 1px solid #D1D5DB;
+    selection-background-color: #F3E8FF;
+    selection-color: #6B21A8;
+    padding: 5px;
+    outline: none;
+}
+
+/* Sign In Button */
+QPushButton#loginButton {
+    background-color: #8456C4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px;
+}
+
+QPushButton#loginButton:hover {
+    background-color: #7341B0;
+}
+
+QPushButton#loginButton:pressed {
+    background-color: #5F2D99;
+}

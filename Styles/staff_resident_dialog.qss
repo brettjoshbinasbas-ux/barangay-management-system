@@ -1,0 +1,171 @@
+/* ========================================
+   Resident Dialog Stylesheet — FIXED INPUTS
+   ======================================== */
+
+/* Main Dialog */
+QDialog {
+    background-color: #FFFFFF;
+}
+
+/* Header */
+QFrame#dialogHeader {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+QLabel#dialogTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #111827;
+}
+
+QLabel#dialogSubtitle {
+    font-size: 13px;
+    color: #6B7280;
+}
+
+QPushButton#closeButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    color: #6B7280;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+QPushButton#closeButton:hover {
+    background-color: #F3F4F6;
+    color: #111827;
+}
+
+/* Content */
+QWidget#dialogContent {
+    background-color: #FFFFFF;
+}
+
+QLabel#fieldLabel {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 5px;
+}
+
+/* Input Fields — Unified Padding */
+QLineEdit#dialogInput,
+QComboBox#dialogComboBox,
+QSpinBox#dialogSpinBox {
+    background-color: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #111827;
+    min-height: 40px;
+}
+
+QLineEdit#dialogInput:focus,
+QComboBox#dialogComboBox:focus,
+QSpinBox#dialogSpinBox:focus {
+    border: 2px solid #8B5CF6;
+    padding: 7px 11px; /* Adjusted to maintain height */
+    outline: none;
+}
+
+QLineEdit#dialogInput::placeholder {
+    color: #9CA3AF;
+}
+
+/* ComboBox Dropdown */
+QComboBox#dialogComboBox::drop-down {
+    border: none;
+    padding-right: 10px;
+}
+
+QComboBox#dialogComboBox::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #6B7280;
+    margin-right: 8px;
+}
+
+QComboBox#dialogComboBox QAbstractItemView {
+    background-color: white;
+    border: 1px solid #D1D5DB;
+    selection-background-color: #F3E8FF;
+    selection-color: #6B21A8;
+    padding: 5px;
+    outline: none;
+}
+
+/* SpinBox Arrows */
+QSpinBox#dialogSpinBox::up-button,
+QSpinBox#dialogSpinBox::down-button {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+}
+
+QSpinBox#dialogSpinBox::up-button:hover,
+QSpinBox#dialogSpinBox::down-button:hover {
+    background-color: #F3F4F6;
+}
+
+QSpinBox#dialogSpinBox::up-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 6px solid #6B7280;
+}
+
+QSpinBox#dialogSpinBox::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #6B7280;
+}
+
+/* Footer */
+QFrame#dialogFooter {
+    background-color: #F9FAFB;
+    border-top: 1px solid #E5E7EB;
+}
+
+QPushButton#cancelButton {
+    background-color: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    min-height: 32px;
+}
+
+QPushButton#cancelButton:hover {
+    background-color: #F3F4F6;
+    border-color: #9CA3AF;
+}
+
+QPushButton#saveButton {
+    background-color: #8B5CF6;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    min-height: 32px;
+}
+
+QPushButton#saveButton:hover {
+    background-color: #7C3AED;
+}
+
+QPushButton#saveButton:pressed {
+    background-color: #6D28D9;
+}

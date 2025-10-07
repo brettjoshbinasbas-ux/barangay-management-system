@@ -1,0 +1,9 @@
+﻿.venv/
+__pycache__/
+*.pyc
+*.pdf
+*.csv
+.idea/
+duplicate/
+test/
+exports/

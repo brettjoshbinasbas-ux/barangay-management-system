@@ -1,0 +1,124 @@
+/* ========================================
+   Staff Infographics Stylesheet
+   ======================================== */
+
+/* Main Panel */
+#infographicsPanel {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Title Labels */
+#titleLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 5px 0px;
+}
+
+#subtitleLabel {
+    font-size: 14px;
+    color: #7f8c8d;
+    padding: 2px 0px 15px 0px;
+}
+
+/* KPI Boxes */
+#kpiBox {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 10px;
+    padding: 15px 10px;      /* reduce padding to fit large text */
+    margin: 5px;
+    min-height: 140px;       /* ensures frame is tall enough */
+}
+
+#kpiTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 4px;
+}
+
+#kpiValue {
+    font-size: 30px;         /* slightly bigger but more centered */
+    font-weight: bold;
+    color: #3498db;
+    line-height: 1.2;        /* keeps vertical balance */
+}
+
+
+/* Chart Boxes */
+#chartBox {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 5px;
+}
+
+#chartTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+#chartSubtitle {
+    font-size: 12px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+/* Summary Boxes */
+#summaryBox {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 5px;
+}
+
+#summaryLabel {
+    font-size: 12px;
+    color: #7f8c8d;
+    margin-bottom: 3px;
+}
+
+#summaryValue {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Chart Canvas Styling */
+FigureCanvas {
+    background-color: #ffffff;
+    border: 1px solid #f1f5f9;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+/* Layout Spacing */
+QVBoxLayout, QHBoxLayout {
+    spacing: 15px;
+}
+
+QPushButton#refreshButton {
+    background-color: #E0F2FE;               /* Soft blue background */
+    border: 1px solid #93C5FD;               /* Light blue border */
+    border-radius: 8px;
+    color: #1D4ED8;                          /* Indigo text */
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+}
+
+QPushButton#refreshButton:hover {
+    background-color: #BFDBFE;
+    border-color: #60A5FA;
+}
+
+QPushButton#refreshButton:pressed {
+    background-color: #93C5FD;
+    border-color: #3B82F6;
+}

@@ -1,0 +1,323 @@
+/* staff_requests.qss - Updated Stylesheet for Staff Requests Panel */
+
+/* Main Widget Background */
+QWidget {
+    background-color: #F8FAFC;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Page Title */
+QLabel#pageTitle {
+    color: #1E293B;
+    font-size: 18px;
+    font-weight: normal;
+    border: none;
+    background-color: transparent;
+}
+
+/* Header Frame */
+QFrame#headerFrame {
+    background-color: transparent;
+    border: none;
+}
+
+/* Main Title */
+QLabel#titleLabel {
+    color: #7C3AED;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+}
+
+/* Subtitle */
+QLabel#subtitleLabel {
+    color: #64748B;
+    font-size: 11px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Completed Card */
+QFrame#completedCard {
+    background-color: white;
+    border: none;
+    border-left: 4px solid #22C55E;
+    border-radius: 8px;
+}
+
+QLabel#completedLabel {
+    color: #64748B;
+    font-size: 11px;
+    border: none;
+    background-color: transparent;
+}
+
+QLabel#completedNumber {
+    color: #22C55E;
+    font-size: 32px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+}
+
+/* New Request Button */
+QPushButton#newRequestButton {
+    background-color: #7C3AED;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 20px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+QPushButton#newRequestButton:hover {
+    background-color: #6D28D9;
+}
+
+QPushButton#newRequestButton:pressed {
+    background-color: #5B21B6;
+}
+
+/* Table Container */
+QFrame#tableContainer {
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Table Header Labels */
+QLabel#tableHeader {
+    color: #1E293B;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+}
+
+QLabel#tableSubheader {
+    color: #94A3B8;
+    font-size: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Table Widget */
+QTableWidget#requestsTable {
+    background-color: white;
+    border: none;
+    gridline-color: transparent;
+    selection-background-color: #F8FAFC;
+    outline: 0;
+    border: none;
+}
+
+QTableWidget#requestsTable::item {
+    padding: 8px;
+    border: none;
+    color: #1E293B;
+    background-color: transparent;
+}
+
+QTableWidget#requestsTable::item:selected {
+    background-color: #F8FAFC;
+    color: #1E293B;
+    border: none;
+}
+
+/* Remove grid lines and cell borders */
+QTableWidget#requestsTable QTableCornerButton::section {
+    border: none;
+    background-color: #F8FAFC;
+}
+
+/* Table Header - Remove borders */
+QHeaderView::section {
+    background-color: #F8FAFC;
+    color: #64748B;
+    padding: 12px 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+QHeaderView::section:horizontal {
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Status Labels - Remove borders and make clean */
+QLabel#statusCompleted {
+    background-color: #D1FAE5;
+    color: #059669;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 9px;
+    font-weight: 500;
+    border: none;
+}
+
+QLabel#statusPending {
+    background-color: #FEF3C7;
+    color: #D97706;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 9px;
+    font-weight: 500;
+    border: none;
+}
+
+QLabel#completionInfo {
+    color: #94A3B8;
+    font-size: 9px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Action Buttons - Remove all borders */
+QPushButton#completeButton {
+    background-color: #10B981;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 9px;
+    font-weight: 500;
+}
+
+QPushButton#completeButton:hover {
+    background-color: #059669;
+}
+
+QPushButton#completeButton:pressed {
+    background-color: #047857;
+}
+
+/* Icon Buttons — Completely frameless */
+QPushButton#viewButton,
+QPushButton#editButton,
+QPushButton#deleteButton {
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 4px;
+    min-width: 36px;
+    min-height: 36px;
+    max-width: 36px;
+    max-height: 36px;
+    outline: none;
+    background-color: transparent;
+}
+
+/* View Button Specific */
+QPushButton#viewButton {
+    background-color: #DBEAFE;
+    color: #1E3A8A;
+}
+
+QPushButton#viewButton:hover {
+    background-color: #BFDBFE;
+}
+
+/* Edit Button Specific */
+QPushButton#editButton {
+    background-color: #FEF3C7;
+    color: #92400E;
+}
+
+QPushButton#editButton:hover {
+    background-color: #FDE68A;
+}
+
+/* Delete Button Specific */
+QPushButton#deleteButton {
+    background-color: #FEE2E2;
+    color: #991B1B;
+}
+
+QPushButton#deleteButton:hover {
+    background-color: #FCA5A5;
+}
+
+/* Action cell styling - remove any borders */
+QTableWidget#requestsTable::item[column="5"], /* Actions column */
+QTableWidget#requestsTable::item[column="4"] { /* Status column */
+    border: none;
+    background-color: transparent;
+}
+
+/* QLineEdit — Frameless Text Input */
+QLineEdit {
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    color: #1E293B;
+    padding: 2px 4px;
+    outline: none;
+}
+
+QLineEdit:focus {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+QLineEdit::placeholder {
+    color: #94A3B8;
+}
+
+/* Scrollbar Styling */
+QScrollBar:vertical {
+    background-color: #F8FAFC;
+    width: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #CBD5E1;
+    border-radius: 5px;
+    min-height: 20px;
+    border: none;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #94A3B8;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+    border: none;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+    border: none;
+}
+
+/* Remove focus borders from all buttons and widgets */
+QPushButton:focus,
+QTableWidget:focus,
+QHeaderView:focus,
+QScrollBar:focus {
+    outline: none;
+    border: none;
+}
+
+/* Remove any cell borders and grid lines completely */
+QTableView {
+    gridline-color: transparent;
+    border: none;
+    outline: none;
+}
+
+QTableWidget::item {
+    border: none;
+    outline: none;
+}
