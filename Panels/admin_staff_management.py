@@ -4,7 +4,7 @@ from PyQt6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
     QFrame, QTableWidget, QTableWidgetItem
 )
-from PyQt6.QtCore import Qt
+# from PyQt6.QtCore import Qt
 
 class StaffManagementPage(QWidget):
     def __init__(self):

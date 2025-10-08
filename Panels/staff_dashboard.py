@@ -9,10 +9,10 @@ from PyQt6.QtCore import Qt, QTimer
 from PyQt6.QtGui import QPixmap, QFont
 
 from Panels.db import get_connection
-from staff_resident_profiles import StaffResidentProfiles
-from staff_requests import StaffRequests
-from staff_infographics import StaffInfographics
-from staff_resident_demographics import StaffResidentDemographics
+from Panels.staff_resident_profiles import StaffResidentProfiles
+from Panels.staff_requests import StaffRequests
+from Panels.staff_infographics import StaffInfographics
+from Panels.staff_resident_demographics import StaffResidentDemographics
 
 
 class DashboardWindow(QMainWindow):

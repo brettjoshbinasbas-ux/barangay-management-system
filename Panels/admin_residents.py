@@ -394,7 +394,7 @@ class AdminResidents(QWidget):
     # ---------------------------------------
     def edit_resident(self, resident_id):
         try:
-            from staff_resident_dialog import ResidentDialog
+            from Panels.staff_resident_dialog import ResidentDialog
             dialog = ResidentDialog(self, resident_id=resident_id, role="Admin", user_id=self.admin_id)
             dialog.setModal(True)
             if dialog.exec():

@@ -10,8 +10,8 @@ from PyQt6.QtCore import Qt
 
 from Panels.db import get_connection, verify_password
 from Panels.logger import log_staff_activity, log_admin_activity
-from staff_dashboard import DashboardWindow
-from admin_dashboard import AdminDashboard
+from Panels.staff_dashboard import DashboardWindow
+from Panels.admin_dashboard import AdminDashboard
 
 
 class LoginPage(QMainWindow):

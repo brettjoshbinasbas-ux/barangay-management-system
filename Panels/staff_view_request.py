@@ -4,7 +4,7 @@ from PyQt6.QtWidgets import (
 )
 from PyQt6.QtCore import Qt
 from Panels.db import get_connection
-from document_templates import (
+from Panels.document_templates import (
     generate_barangay_clearance,
     generate_certificate_of_residency,
     generate_barangay_id,

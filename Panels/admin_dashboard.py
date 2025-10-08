@@ -9,13 +9,13 @@ from PyQt6.QtCore import Qt, QTimer
 from PyQt6.QtGui import QPixmap, QFont
 
 from Panels.db import get_connection
-from admin_worker_management import AdminWorkerManagement
-from staff_infographics import StaffInfographics
-from admin_reports import AdminReports
+from Panels.admin_worker_management import AdminWorkerManagement
+from Panels.staff_infographics import StaffInfographics
+from Panels.admin_reports import AdminReports
 from Panels.admin_requests import AdminRequests
 from Panels.admin_residents import AdminResidents
-from admin_StaffActivityHistory import StaffActivityHistory
-from admin_AdminActivityHistory import AdminActivityHistory
+from Panels.admin_StaffActivityHistory import StaffActivityHistory
+from Panels.admin_AdminActivityHistory import AdminActivityHistory
 
 
 class AdminDashboard(QMainWindow):

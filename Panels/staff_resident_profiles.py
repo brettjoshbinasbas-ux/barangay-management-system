@@ -10,7 +10,7 @@ from functools import partial
 
 from Panels.db import get_connection
 from Panels.logger import log_staff_activity
-from staff_resident_dialog import ResidentDialog
+from Panels.staff_resident_dialog import ResidentDialog
 
 faulthandler.enable()
 

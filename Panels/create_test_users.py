@@ -1,6 +1,6 @@
 # create_test_users.py
 import bcrypt
-from db import get_connection
+from Panels.db import get_connection
 
 def hash_password(password: str) -> str:
     return bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
